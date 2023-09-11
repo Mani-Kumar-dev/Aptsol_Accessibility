@@ -1,0 +1,463 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.loader{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 4s ease;
+    
+}
+.loader_ball{
+    width: 25px;
+    height: 25px;
+    background-color:#5c9f24;
+    margin-inline: 5px;
+    border-radius: 50%;
+    animation:bounce 450ms alternate infinite;
+}
+.loader_ball:nth-child(2){
+    animation-delay:150ms;
+}
+.loader_ball:nth-child(3){
+    animation-delay:300ms ;
+}
+@keyframes bounce {
+    from{
+        transform:scaleX(1.25);
+    }
+    to{
+        transform: translateY(-50px) scaleX(1);
+    }
+}
+.loader_ball-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+/*---banner starts---*/
+
+.accordion-button.collapsed:active .accordion-button::after{
+transform: rotate(45deg)
+}
+.access
+{
+    background: linear-gradient(90deg, rgba(0,0,0,0.7736344537815126) 100%, rgba(0,212,255,1) 100%),url('/Assets/images/accessbg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    background-attachment: fixed;
+    background-blend-mode:darken;
+    width:100%;
+    height: 50vh;
+}
+h2.access-head {
+    font-size: 50px;
+    margin: 0px 0px 50px 0px;
+}
+.content-access {
+    margin-top: 5%;
+}
+.head-access {
+    margin-top: 5%;
+    color: #0A569C;
+}
+p.access-text {
+    font-size: 15px;
+}
+button.btn.btn-success.Artificial {
+    width: 15%;
+    padding: 10px 18px;
+    margin-left: 65%;
+    font-weight: 500;
+    background: #0A569C;
+    border: 1px solid #0A569C;
+}
+img.img-fluid.icon-open {
+    width: 20px;
+    height: 20px;
+    margin: -3px 0px 0px 0px;
+}
+/*---banner ends---*/
+/*---Accessbility imp-- starts---*/
+h2.head-access {
+    margin: 35px 0px 35px 0px;
+}
+p.tex {
+    margin: 0px 0px 30px 0px;
+}
+.card.aces {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    align-items: center;
+    justify-items: center;
+    background-color: #F1F7FB;
+    padding: 40px;
+    border-radius: 60px 0px 60px 0px;
+}
+.card-image.eq {
+    width: 70%;
+    }
+.card-image.com {
+    width: 65%;
+}
+.card-image.ux {
+    width: 90%;
+}
+h3.head-text {
+    font-size: 20px;
+    color: #5c9f24;
+    margin-top: 8%;
+}
+p.text-subtext {
+    font-size: 16px;
+    text-align: left;
+}
+/*---Accessbility imp-- Ends---*/
+/*---Resulting starts--*/
+.image_con_re {
+    width: 150%;
+}
+.card-content {
+    background: #f1f7fb;
+    padding: 15px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 0px 60px 0px 60px;
+    border: 2px solid #5c9f24;
+    width: 100%;
+    height: 100%;
+   
+}
+
+h3.con-texthe {
+    font-size: 18px;
+    color: #5c9f24;
+}
+
+p.text-rese {
+    font-size: 14px;
+}
+.card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.image-flow {
+    width: 100%;
+    margin-top: 16%;
+}
+/*---Resulting Ends--*/
+
+/*----Organisation starts---*/
+section.accord {
+    background-color: #f1f7fb;
+    width: 100%;
+    padding: 50px;
+    height: 100%;
+}
+.card {
+    width: 100%;
+    height: 100%;
+}
+.image-card {
+    width: 300%;
+    transform: translateY(15%);
+    
+}
+.card-conn {
+    display: flex;
+    flex-wrap: nowrap;
+}
+h3.card-h {
+    font-size: 18px;
+    color: #5c9f24;
+}
+.card {
+    padding: 10px;
+    
+}
+p.govt_text {
+    font-size: 14px;
+}
+.card.wrap {
+    background-color: #5c9f24;
+    color: #fff;
+    border-radius: 0px 50px 0px 50px;
+    padding: 15px;
+    width: 100%;
+    height: 90% !important;
+}
+
+
+.card.wrapodd {
+    border-radius: 0px 50px 0px 50px;
+    border: 2px solid #5c9f24;
+    padding: 15px;
+    width: 100%;
+    height: 90% !important;
+}
+h3.card-h.wrapcon {color: #000000c4;}
+/*----Organisation ends---*/
+/*--------Benefits starts--*/
+.card.disability {
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+ul.list_group {
+    list-style: none;
+}
+li.list-item.links {
+    margin-bottom: 3%;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+}
+li.list-item.links::before{
+    position: absolute;
+    content:"\f105";
+    font-family: "fontAwesome";
+    left: -20px;
+    top: 0px;
+    color: #5C9F24;
+}
+h3.h.text-center.mt-4 {
+    color: #0A569C;
+    font-size: 20px;
+}
+i.fa-solid.fa-eye,
+i.fa-solid.fa-ear-deaf,
+i.fa-brands.fa-accessible-icon {
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+img.img-fluid.icon-img {
+    width: 50%;
+    margin: 0px 0px 0px 40px;
+    border-radius: 50%;
+}
+span.icon-item {
+    width: 55%;
+    height: 55%;
+    background: #5c9f24;
+    border-radius: 50%;
+    padding: 5%;
+    
+}
+span.icon-item2
+{
+    width: 55%;
+    height: 55%;
+    background: #0a569b;
+    border-radius: 50%;
+    padding: 5%;
+     
+}
+span.icon-item3{
+    width: 55%;
+    height: 55%;
+    background: #c07918;
+    border-radius: 50%;
+    padding: 5%;
+     
+}
+
+
+/*--------Benefits ends--*/
+/*-----OurServices starts---*/
+section.bg-services {
+    background-color: #f1f7fb;
+    padding: 40px;
+}
+.card.ser.bg {
+    background-color: #5C9F24;
+    color: #fff;
+    border: 2px solid #5C9F24;
+}
+p.webtext {
+    font-size: 17px;
+    text-align: center;
+    justify-items: center;
+    font-weight: 500;
+}
+.card.ser {
+    border: 2px solid #5c9f24;
+    border-radius: 0px 40px 0px 40px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.card-serimg {
+    width: 50%;
+    
+}
+.service-content {
+    margin-top: 40px;
+    text-align: justify;
+}
+.text-acco {
+    padding: 15px;
+}
+.btn-services {
+    text-align: right;
+}
+p.text-services {
+    position: relative;
+    margin: 0px 0px 15px 25px;
+}
+
+p.text-services::before {
+    position: absolute;
+    content: "\f101";
+    font-family: 'fontAwesome';
+    left: -24px;
+    top: 0;
+    color: #5c9f24;
+}
+button.btn.btn-success.btn-service {
+    background: #0a569c;
+    border: #0a569c;
+    font-weight: 700;
+    padding: 8px 28px 8px 10px;
+    position: relative;
+}
+button.btn.btn-success.btn-service::after {
+    font-family: 'fontAwesome';
+    content: '\f061';
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    
+}
+button.btn.btn-success.btn-service:hover .button.btn.btn-success.btn-service::after
+{
+    visibility: visible;
+}
+p.Onboard-Request {
+    color: #5c9f24;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*-----OurServices ends---*/
+
+
+/*---Choosing aptsol Starts---*/
+.accordion {
+    
+    --bs-accordion-bg: none !important;
+}
+.accordion-body {
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: -50px 0 0 0;
+}
+.img-acco {
+    width: 50%;
+    transform: translateX(50%);
+
+}
+/* .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: rotate(-90deg) !important;
+} */
+.card.flag {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: #f1f7fb;
+    text-align: center;
+    border:none;
+}
+.flag-head {
+    margin-top: 18px;
+}
+.accordion-item{
+    border:none !important;
+    background-color: #ffffff8f;
+}
+li.nav-item-pills {
+    margin-bottom: 5%;
+    width: 100%;
+}
+h5.acc-head {
+    text-align: left;
+}
+.link-btn {
+    width: 100%;
+    position: relative;
+}
+
+/* .link-btn::before{
+    content: "\f107";
+    position: absolute;
+    right: 0;
+    font-family: 'fontAwesome';
+    font-size: 16px;
+    transition: ease-in;
+    
+} */
+.nav-pills .nav-link.active .link-btn::before{
+    
+    color: red;
+   
+ } 
+ .nav-pills .nav-link.active .fa-angle-down {
+    transform: rotate(-90deg);
+}
+.fa-angle-down{
+    transition:  0.5s;
+   
+}
+span.icon-arrow {
+    float: right;
+}
+.nav-pills .nav-link.active,
+ .nav-pills .show>.nav-link {
+ 
+    background: none !important;
+    color:  #5c9f24!important;
+    
+}
+
+
+/*---Choosing aptsol ends---*/
+
+
+h3.flag-link {color: #5c9f24;}
+section{
+    position: relative;
+}
+
+
+.flag-img {
+    width: 40%;
+    transform: translateX(75%);
+}
+img.card-img.flags {
+    border-radius: 50%;
+}
+
